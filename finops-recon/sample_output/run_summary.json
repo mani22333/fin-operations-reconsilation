@@ -1,0 +1,67 @@
+{
+  "run_id": "RUN-20261117-171323-6938",
+  "started_at": "2026-11-17T17:13:23",
+  "as_of": "2026-10-03",
+  "input_hash": "3e457317321818e281bea9cf15d4e2c2c2614856a4d1dcff0d3653ce5ed700f7",
+  "runtime_s": 0.56,
+  "ledger_entries": 4989,
+  "bank_lines": 4794,
+  "transactions_processed": 9783,
+  "matched_pairs": 4948,
+  "match_types": {
+    "EXACT": 3261,
+    "REFERENCE": 948,
+    "HEURISTIC": 478,
+    "BATCH": 261
+  },
+  "ledger_match_rate": 0.9918,
+  "bank_match_rate": 0.9879,
+  "exceptions": {
+    "FX_VARIANCE": 42,
+    "DUPLICATE_PAYMENT": 41,
+    "AMOUNT_MISMATCH": 41,
+    "ORPHAN_REFERENCE": 41,
+    "UNMATCHED_BANK": 41,
+    "UNMATCHED_LEDGER": 41,
+    "BANK_CHARGE": 17
+  },
+  "open_ap_base": 110190708.36,
+  "open_ar_base": 95877896.46,
+  "unexplained_difference": {
+    "HDFC-OPS": -0.0,
+    "ICICI-COLL": -0.0
+  },
+  "detection_vs_ground_truth": {
+    "injected": 246,
+    "true_positives": 244,
+    "false_positives": 3,
+    "recall": 0.9919,
+    "precision": 0.9879,
+    "per_kind": {
+      "AMOUNT_MISMATCH": {
+        "injected": 41,
+        "detected": 41
+      },
+      "DUPLICATE_PAYMENT": {
+        "injected": 41,
+        "detected": 41
+      },
+      "FX_VARIANCE": {
+        "injected": 41,
+        "detected": 40
+      },
+      "ORPHAN_REFERENCE": {
+        "injected": 41,
+        "detected": 41
+      },
+      "UNMATCHED_BANK": {
+        "injected": 41,
+        "detected": 41
+      },
+      "UNMATCHED_LEDGER": {
+        "injected": 41,
+        "detected": 40
+      }
+    }
+  }
+}
